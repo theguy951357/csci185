@@ -1,0 +1,21 @@
+/*#fed78c color pallette */
+.bg1{
+	background-color: #b4aa99;
+}
+
+.ball{
+	background-color: #0aa388;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+}
+
+.ball span{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}

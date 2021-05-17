@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Virtual Tip Jar</title>
+	<script src="https://kit.fontawesome.com/27f89fbdec.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="sunnymuffin.css">
+	<script src="honeyflake.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="bg1" onload="init()">
+	<center><h1>Virtual Tip Jar</h1></center>
+	
+	<div class="stageLax">
+	
+	<img src="images/stage.jpg">
+	
+	</div>
+	
+	<div class="menu">
+		<ul>
+			<li class = "current">Your Profile</li>
+			<li><a href="about.html">about</a></li>
+			<li><a href="../index.html">Homepage</a></li>
+		</ul>
+	</div>
+	
+	<div class="flex-container">
+	
+	<div class="container1">
+		<center><h2>You</h2></center>
+		
+		<div class="profile box" id="profile">
+		<div>
+			<img class="bandPic" src="images/bandpic.jpg" alt="profile band picture">
+		</div>
+			<div id="profileName">
+				<span>profile name</span>
+			</div>
+			<div id="profileId">
+				<span>profile id</span>
+			</div>
+			<div id="profileGenres">
+				<span>profile genres</span>
+			</div>
+			<div id="profileBands">
+				<span>No Bands yet</span>
+			</div>
+		</div>
+		<center><h2>Band List</h2></center>
+		<a class="bandLink" href="bandProfile.html">
+			<div class="band box" id ="band">
+				<div class id="bandTitle">
+					<span>No bands yet.</span>
+				</div>
+				<div class id="bandLocation">
+					<span>Add one from</span>
+				</div>
+				<div class id="bandStyle">
+					<span>the suggestions</span>
+				</div>
+				
+			</div>
+		</a>
+		
+	</div>
+	
+	<div class="container2">
+		<center><h2>News Feed</h2></center>
+		<div class= "newsFeed box">
+			
+		
+			<p>
+			
+			
+			Did he just throw my cat out of the window? Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists. You really think you can fly that thing? So you two dig up, dig up dinosaurs? You know what? It is beets. I've crashed into a beet truck.
+			</p>
+			<p>
+			You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager? My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little bastard! Eventually, you do plan to have dinosaurs on your dinosaur tour, right?
+			</p>
+			<p>
+			Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should. Hey, you know how I'm, like, always trying to save the planet? Here's my chance. God help us, we're in the hands of engineers. Life finds a way.
+			</p>
+			<p>
+			Life finds a way. Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists. So you two dig up, dig up dinosaurs? You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager? Forget the fat lady! You're obsessed with the fat lady! Drive us out of here!
+			</p>
+			<p>
+			Checkmate... Jaguar shark! So tell me - does it really exist? Must go faster... go, go, go, go, go! Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists. Eventually, you do plan to have dinosaurs on your dinosaur tour, right
+			
+			</p>
+		
+		</div>
+		
+	</div>
+	<div class="container3">
+		<center><h2>Suggestions</h2></center>
+		<div class="suggestion box" id="suggestion">
+			<span>suggestions from genres you're interested in.</span>
+		</div>
+		<button onclick="addBand()">add</button><button onclick="removeBand()">remove</button>
+	</div>
+	
+	</div>
+	
+	
+</body>
+</html>

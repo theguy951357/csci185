@@ -1,0 +1,147 @@
+div{
+	width: 33.3%;
+	height:33.33%;
+}
+
+.north{
+	position: fixed;
+	top: 0%
+}
+
+.middle{
+	position: fixed;
+	top: 33.33%;
+}
+
+.south{
+	position: fixed;
+	top: 66.66%;
+}
+
+.west{
+	left: 0%;
+}
+.center{
+	left: 33.33%;
+}
+.east{
+	left: 66.66%;
+}
+.red1{
+	background-color: #ff0000;
+}
+.red2{
+	background-color: #aa0000;
+}
+.red3{
+	background-color: #770000;
+}
+.green1{
+	background-color: #00ff00;
+}
+.green2{
+	background-color: #00aa00;
+}
+.green3{
+	background-color: #007700;
+}
+.blue1{
+	background-color: #0000ff;
+}
+.blue2{
+	background-color: #0000aa;
+}
+.blue3{
+	background-color: #000077;
+}
+
+.middleborder{
+	background-color: blue;
+	border: 2px solid black;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 25%;
+	height: 25%;
+	
+}
+.middleborder:hover{
+	
+	background-color: yellow;
+	width: 30em;
+	height: 30em;
+	border-radius: 50%;
+	animation-name: smiley;
+	animation-duration: 3s;
+	animation-timing-function: ease;
+}
+.middleborder:hover .textdiv{
+	background-color: black;
+	border-radius: 0px 0px 100% 100%;
+	top: 70%;
+	height: 25%;
+	animation-name: smileymouth;
+	animation-duration: 3s;
+	animation-timing-function: ease;
+}
+@keyframes smiley{
+	0%{
+		background-color: blue;
+		width: 25%;
+		height: 25%;
+	}
+	100%{
+		background-color: yellow;
+		width: 30em;
+		height: 30em;
+		border-radius: 50%;
+	}
+}
+
+.textdiv{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 75%;
+	height: 50%;
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+	text-align: center;
+}
+
+.lefteye{
+	background-color: black;
+	border-radius: 50%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	display: none;
+}
+.righteye{
+	background-color: black;
+	border-radius: 50%;
+	position: fixed;
+	top: 50%;
+	right: 50%;
+	display: none;
+	
+}
+.middleborder:hover .lefteye{
+	display:block;
+	top: 20%;
+	left: 10%;
+	animation-name: smileyleft;
+	animation-duration: 3s;
+	animation-timing-function: ease;
+}
+.middleborder:hover .righteye{
+	display: block;
+	top: 20%;
+	right: 10%;
+	animation-name: smileyright;
+	animation-duration: 3s;
+	animation-timing-function: ease;
+}

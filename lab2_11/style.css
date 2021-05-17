@@ -1,0 +1,168 @@
+.bg1{
+	background-image: url("grass.JPG");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.bg2{
+	background-image: url("snow.JPG");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.ball{
+	font-size: 100px;
+	color: #1010e5;
+}
+.run{
+	font-size: 200px;
+	color: #ff6b43;
+}
+.snowboarder{
+	color: inherit;
+	font-size: inherit;
+	
+}
+.ramp{
+	color: #e85275;
+	font-size: inherit;
+}
+.tram{
+	color: #765995;
+	font-size: inherit;
+}
+.div1{/*player*/
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+.div2{/*ball*/
+	position: fixed;
+	top: 175px;
+	left: 125px;
+	animation-name: kick;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	z-index: 100;
+}
+
+@keyframes kick{
+	0%{
+		left: 125px; 
+		top: 175px;
+	
+	}
+	/* 50%{ */
+		
+		/* top: 200px; */
+		/* left: 350px; */
+	/* } */
+	75%{
+		top: 75px;
+		left: 375;
+		font-size: 80px;
+	}
+	100%{
+		left: 375px;
+		top: 125px;
+		font-size: 100px;
+	
+	}
+}
+.div3{/*goal*/
+	position: fixed;
+	top: 0px;
+	left: 300px;
+}
+.div3 img{/*goal*/
+	width: 200px;
+	
+}
+.div4{ /*snowboarder */
+	font-size: 100px;
+	color: #2f4858;
+	position: fixed;
+	left: 400px;
+	top: 320px;
+	z-index: 5;
+	
+	animation-name: jump;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+}
+@keyframes jump{
+	from{color: #2f4858;}
+	to{color: #ff6b43;}
+	0%{
+		font-size: 100px;
+		left: 400px;
+		top: 320px;
+	}
+	100%{
+		font-size: 1px;
+		left: 475px;
+		top:150px;
+	}
+}
+.div5{ /*ramp */
+	font-size: 100px;
+	position: fixed;
+	left: 390px;
+	top: 390px;
+}
+.div6{ /*tram */
+	font-size: 150px;
+	position: fixed;
+	top: 250px;
+	left: 10px;
+	animation-name: lift;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+@keyframes lift{
+	0%{
+		top: 250px;
+		left: 10px;
+		font-size: 150px;
+	}
+	50%{
+		top: 180px;
+		left: 300px;
+		font-size:100px;
+	}
+	100%{
+		top: 250;
+		left: 10px;
+		font-size: 150px;
+	}
+}
+.homepage{
+	position: fixed;
+	bottom: 10%;
+	right:0px;
+	left: 0px;
+}
+.page2link{
+	position: fixed;
+	bottom: 10%;
+	right: 0px;
+	left: 20%;
+}
+.attribution{
+	background: black;
+	color: white;
+	position: fixed;
+	bottom: 0px;
+	left:0px;
+	right: 0px;
+	padding: 2px;
+	opacity: 30%;
+}
+.attribution a:link{
+	color: white;
+	text-decoration: none;
+}
+.attribution a:visited{
+	color: white;
+	text-decoration: none;
+}

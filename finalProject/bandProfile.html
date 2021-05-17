@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Virtual Tip Jar</title>
+	<script src="https://kit.fontawesome.com/27f89fbdec.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="sunnymuffin.css">
+	<script src="honeyflake.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+		<script>
+		  paypal.Buttons({
+			  style: {
+				  shape: 'pill',
+				  color: 'blue',
+				  layout: 'vertical',
+				  label: 'paypal',
+				  
+			  },
+			  createOrder: function(data, actions) {
+				  return actions.order.create({
+					  purchase_units: [{
+						  amount: {
+							  value: '1'
+						  }
+					  }]
+				  });
+			  },
+			  onApprove: function(data, actions) {
+				  return actions.order.capture().then(function(details) {
+					  alert('Transaction completed by ' + details.payer.name.given_name + '!');
+				  });
+			  }
+		  }).render('#paypal-button-container');
+		</script>
+</head>
+<body class="bg1" onload="bandInit()">
+	<center><h1 id="bandTitle">Band Name</h1></center>
+	
+	<div class="stageLax">
+	
+	<img src="images/stage.jpg">
+	
+	</div>
+	
+	<div class="menu">
+		<ul>
+			<li><a href="index.html">Your Profile</a></li>
+			<li><a href="about.html">about</a></li>
+			<li><a href="../index.html">Homepage</a></li>
+		</ul>
+	</div>
+	
+	<div id="ad" class="commercial box" style="display: none;">
+	
+	<iframe id="videoAd"
+	width="560" height="315" 
+	src="https://www.youtube.com/embed/SDU5PxaOgCA?start=7" 
+	frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+	allowfullscreen="">
+				</iframe>
+	
+	</div>
+	
+	<div class="flex-container">
+	
+	<div class="container1">
+		<center><h2>Band Info</h2></center>
+		<div class="band box" id ="band">
+			<div>
+			<img class="bandPic" src="images/bandpic.jpg" alt="profile band picture">
+			</div>
+			<div id="bandLocation">
+				<span>band location</span>
+			</div>
+			<div id="bandStyle">
+				<span>band style</span>
+			</div>
+			
+		</div>
+		<center><h2 id="playerTitle">Now Playing: 01intro.mp3</h2></center>
+		<div class="player box">
+			
+			<audio controls class="audio" id="audio">
+			<source id="player" src="audio/01intro.mp3" type="audio/mpeg">
+			Your browser doesn't support audio element.
+			</audio>
+			<br><br>
+			<div class="selectSong" id="0" onclick="playSong(0)">
+				01 Intro
+			</div>
+			<br><br>
+			<div class="selectSong" id="1" onclick="playSong(1)">
+				02 Through Rain and Fire
+			</div>
+			<br><br>
+			<div class="selectSong" id="2" onclick="playSong(2)">
+				03 Red Glove
+			</div>
+			<br><br>
+			<div class="selectSong" id="3" onclick="playSong(3)">
+				04 Meheeko
+			</div>
+			<br><br>
+			<div class="selectSong" id="4" onclick="playSong(4)">
+				05 Alphabet Rhyme
+			</div>
+			<br><br>
+			<div class="selectSong" id="5" onclick="playSong(5)">
+				06 TROCK
+			</div>
+			<br><br>
+		</div>
+	</div>
+	<div class="container2">
+		<center><h2>About the Band</h2></center>
+		<div class = "aboutBand box">
+			
+			<p>
+			God help us, we're in the hands of engineers. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Life finds a way. Hey, take a look at the earthlings. Goodbye! I gave it a cold? I gave it a virus. A computer virus. Jaguar shark! So tell me - does it really exist?
+
+			We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore! Yes, Yes, without the oops! Remind me to thank John for a lovely weekend. God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs.
+
+			Eventually, you do plan to have dinosaurs on your dinosaur tour, right? Must go faster. They're using our own satellites against us. And the clock is ticking. Hey, you know how I'm, like, always trying to save the planet? Here's my chance. I gave it a cold? I gave it a virus. A computer virus.
+
+			Just my luck, no ice. God help us, we're in the hands of engineers. Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists. God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs.
+
+			This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!
+
+			They're using our own satellites against us. And the clock is ticking. Did he just throw my cat out of the window? Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should. Checkmate... Forget the fat lady! You're obsessed with the fat lady! Drive us out of here!
+
+			I gave it a cold? I gave it a virus. A computer virus. Eventually, you do plan to have dinosaurs on your dinosaur tour, right? They're using our own satellites against us. And the clock is ticking. This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows.
+
+			God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Must go faster... go, go, go, go, go! I was part of something special. Just my luck, no ice. I gave it a cold? I gave it a virus. A computer virus.
+			</p>
+		</div>
+	</div>
+	
+	<div class = "container3">
+	
+		<center><h2>Tip Jar</h2></center>
+	
+		<div class = "tipJar box" id="tipjar">
+		
+		<div>Enter Tip Amount</div>
+		
+		<div id="tipAmount" class = "tipAmount" contenteditable=true></div>
+		<div>total</div><div id="tipTotal">0</div>
+		<br><br>
+		<!-- <button onclick="payBand()">paypal</button> -->
+		<div id="paypal-button-container"></div>
+		
+		<br><br>
+		<button onclick = "payBand()">venmo</button>
+		<br><br>
+		<button onclick = "watchVid()">watch a video</button>
+		
+		</div>
+	
+	</div>
+	</div>
+	
+</body>
+</html>

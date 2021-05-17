@@ -1,0 +1,328 @@
+.bg1{
+	background-image: url("images/space2.JPG");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	margin: 0px;
+}
+.bg2{
+	background-image: url("images/feild.JPG");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	margin: 0px;
+}
+h1{
+	color: #d1e7d0;
+}
+h2{
+	color: #d1e7d0;
+}
+h3{
+	color: #d1e7d0;
+}
+.homepage{
+	position: fixed;
+	bottom: 0px;
+	left:0px;
+	right:0px;
+	background-color: #9b0b17;
+	opacity: 50%;
+	font-size: 24px;
+	
+}
+.space{
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 800px;
+	border: 1px solid black;
+	background-color: black;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.space1{
+	
+	background-image: url("images/space4.JPG");
+	
+}
+.space2{
+	
+	background-image: url("images/space.JPG");
+	
+}
+.space3{
+	
+	background-image: url("images/space3.JPG");
+	
+}
+.space4{
+	
+	background-image: url("images/space5.JPG");
+	
+}
+
+.zombie{
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 300px;
+	border: 1px solid #f3eed9;
+	background-color: #f3eed9;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	animation-name: move;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+	
+}
+@keyframes move{
+	0%{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	25%{
+		margin-left: 0%;
+		margin-right: 20%;
+	}
+	50%{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	75%{
+		margin-left: 20%;
+		margin-right: 0%;
+	}
+	100%{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	
+}
+.zombie1{
+	background-image: url("images/pilot.JPG");
+}
+.zombie1:hover{
+	background-image: url("images/zombiePilot.JPG");
+	animation-name: zombie;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	border: 1px solid #9b0b17;
+	background-color: black;
+	
+}
+@keyframes zombie{
+	0%{
+		background-image: url("images/pilot.JPG");
+	}
+	10%{
+		background-image: url("images/zombiePilot.JPG");
+	}
+	20%{
+		background-image: url("images/pilot.JPG");
+	}
+	30%{
+		background-image: url("images/zombiePilot.JPG");
+	}
+	40%{
+		background-image: url("images/pilot.JPG");
+	}
+	50%{
+		background-image: url("images/zombiePilot.JPG");
+	}
+	60%{
+		background-image: url("images/pilot.JPG");
+	}
+	70%{
+		background-image: url("images/zombiePilot.JPG");
+	}
+	80%{
+		background-image: url("images/pilot.JPG");
+	}
+	100%{
+		background-image: url("images/zombiePilot.JPG");
+		border: 1px solid #9b0b17;
+		background-color: black;
+	}
+}
+.zombie2{
+	background-image: url("images/construction.JPG");
+}
+.zombie2:hover{
+	background-image: url("images/constructionZombie.JPG");
+	animation-name: construction;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	border: 1px solid #9b0b17;
+	background-color: black;
+	
+}
+@keyframes construction{
+	0%{
+		background-image: url("images/construction.JPG");
+	}
+	10%{
+		background-image: url("images/constructionZombie.JPG");
+	}
+	20%{
+		background-image: url("images/construction.JPG");
+	}
+	30%{
+		background-image: url("images/constructionZombie.JPG");
+	}
+	40%{
+		background-image: url("images/construction.JPG");
+	}
+	50%{
+		background-image: url("images/constructionZombie.JPG");
+	}
+	60%{
+		background-image: url("images/construction.JPG");
+	}
+	70%{
+		background-image: url("images/constructionZombie.JPG");
+	}
+	80%{
+		background-image: url("images/construction.JPG");
+	}
+	100%{
+		background-image: url("images/constructionZombie.JPG");
+		border: 1px solid #9b0b17;
+		background-color: black;
+	}
+}
+.zombie3{
+	background-image: url("images/doll.JPG");
+}
+.zombie3:hover{
+	background-image: url("images/zombieDoll.JPG");
+	animation-name: doll;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	border: 1px solid #9b0b17;
+	background-color: black;
+	
+}
+@keyframes doll{
+	0%{
+		background-image: url("images/doll.JPG");
+	}
+	10%{
+		background-image: url("images/zombieDoll.JPG");
+	}
+	20%{
+		background-image: url("images/doll.JPG");
+	}
+	30%{
+		background-image: url("images/zombieDoll.JPG");
+	}
+	40%{
+		background-image: url("images/doll.JPG");
+	}
+	50%{
+		background-image: url("images/zombieDoll.JPG");
+	}
+	60%{
+		background-image: url("images/doll.JPG");
+	}
+	70%{
+		background-image: url("images/zombieDoll.JPG");
+	}
+	80%{
+		background-image: url("images/doll.JPG");
+	}
+	100%{
+		background-image: url("images/zombieDoll.JPG");
+		border: 1px solid #9b0b17;
+		background-color: black;
+	}
+}
+.zombie4{
+	background-image: url("images/fish.JPG");
+}
+.zombie4:hover{
+	background-image: url("images/zombieFish.JPG");
+	animation-name: fish;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	border: 1px solid #9b0b17;
+	background-color: black;
+	
+}
+@keyframes fish{
+	0%{
+		background-image: url("images/fish.JPG");
+	}
+	10%{
+		background-image: url("images/zombieFish.JPG");
+	}
+	20%{
+		background-image: url("images/fish.JPG");
+	}
+	30%{
+		background-image: url("images/zombieFish.JPG");
+	}
+	40%{
+		background-image: url("images/fish.JPG");
+	}
+	50%{
+		background-image: url("images/zombieFish.JPG");
+	}
+	60%{
+		background-image: url("images/fish.JPG");
+	}
+	70%{
+		background-image: url("images/zombieFish.JPG");
+	}
+	80%{
+		background-image: url("images/fish.JPG");
+	}
+	100%{
+		background-image: url("images/zombieFish.JPG");
+		border: 1px solid #9b0b17;
+		background-color: black;
+	}
+}
+
+.menu{
+	position: sticky;
+	top: 0;
+}
+.menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #e0998e;
+	opacity: 80%;
+	
+}
+.menu li{
+	float: left;
+	margin-right: 2px;
+	opacity: 100%;
+	
+}
+.menu li a{
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 10px 10px;
+	text-decoration: none;
+	border: 5px outset #555;
+}
+.menu li a:hover{
+	background-color: #111;
+	border: 5px inset #555;
+}
+
+.menu li:last-child{
+	float: right;
+	margin-right: 0px;
+}
+.menu li:nth-last-child(2){
+	float: right;
+}

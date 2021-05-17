@@ -1,0 +1,24 @@
+/*#3af012 color pallette*/
+.bg1{
+	background-color: #5298c2;
+}
+.title{
+	background-color: #789a6a;
+	border: 3px solid #151e11;
+}
+.menu li{
+	list-style-type: none;
+}
+.box{
+	background-color: #3af012;
+	border: 1px solid #151e11;
+	position: fixed;
+	top: 200px;
+	left: 300px;
+	width: 200px;
+	height: 200px;
+}
+
+.inputs{
+	display: none;
+}

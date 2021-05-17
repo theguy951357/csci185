@@ -1,0 +1,41 @@
+/*comment in css*/
+h1{
+	background-color: red;
+	color: slateblue;
+	border: 1px solid black;
+	padding: 10px;
+	width: 50%;
+	font-weight: bold;
+	margin-left: 25%;
+	text-align: center;
+}
+table{
+	border: 1px solid black;
+	width: 300px;
+	margin: auto; /*center-horizontal*/
+	border-collapse: collapse;
+}
+tr{
+	
+	
+}
+th{
+	border: 1px solid #ddd;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #4caf50;
+	color: white;
+	
+}
+td{
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+tr:nth-child(even){background-color: #f2f2f2;}
+tr:nth-child(odd){background-color: #fff;}
+
+tr:hover {
+	background-color: #964300;
+	font-weight: bold;
+}

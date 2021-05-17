@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <TITLE>CSCI Exam 2</title>
+    <STYLE>
+    .box {
+        border: 5px solid black;
+        width: 100px;
+        height:100px;
+        background-color: gray;
+        display: inline-block;
+    }
+    .container{
+        border: 1px solid black;
+    }
+    </style>
+    <script>
+
+	var chatArray = [];
+	var recordArray = [];
+
+function changeColor(boxId){
+	var box = document.getElementById(boxId);
+	var playButton = document.getElementById("play_button");
+	box.style.backgroundColor = boxId;
+	chatArray.push(boxId);
+	if(document.getElementById("start_button").style.display == "none"){
+		if(recordArray.length < 4){
+			recordArray.push(boxId);
+		}
+	}
+	if(recordArray.length == 4){
+		playButton.style.display = "inline-block";
+	}
+	console.log(chatArray);
+	console.log(recordArray);
+	chat();
+	setTimeout(function(){
+		box.style.backgroundColor = "grey";
+	},1000);
+}
+
+
+function chat(){
+	var chatDiv = document.getElementById("chat");
+	chatDiv.innerHTML = "";
+	var text = "";
+	for(i= chatArray.length-1; i>=0; i-- ){
+		
+		text += " " + chatArray[i];
+	}
+	chatDiv.innerHTML = text;
+}
+
+function startRecording(){
+	
+	var recordButton = document.getElementById("start_button");
+	recordButton.style.display = "none";
+	
+	
+}
+
+var count = -1;
+
+function startPlaying(){
+	var playButton = document.getElementById(play_button);
+	var recordButton = document.getElementById(start_button);
+	console.log(recordArray);
+	
+	count +=1;
+	if(count < 4){
+		var box = document.getElementById(recordArray[count]);
+		var text = recordArray[count];
+		console.log(text);
+		
+		<!-- box.style.backgroundColor = text; -->
+		changeColor(text);
+		setTimeout(function(){
+		startPlaying();
+		
+		},1000);
+	}else{
+		count = -1;
+		return;
+		}
+	
+	
+
+
+}	
+    </script>
+</head>
+<body>
+
+<DIV class="container">
+    <center>
+    <DIV class="box" id="red" onclick="changeColor('red')"></DIV>
+    <DIV class="box" id="blue" onclick="changeColor('blue')"></DIV>
+    <DIV class="box" id="green" onclick="changeColor('green')"></DIV>
+    <DIV class="box" id="yellow" onclick="changeColor('yellow')"></DIV>
+    </center>
+</DIV>
+
+<BR><BR>
+
+<DIV class="container" style="padding:15px">
+<center>
+<button id="start_button" onclick="startRecording()">Start Recording</button>
+<button id="play_button" style="display:none" onclick="startPlaying()">Play Recording</button>
+</center>
+</DIV>
+
+<BR><BR>
+
+<DIV id="chat" class="container">Chris Blaha</DIV>
+
+</BODY></HTML>

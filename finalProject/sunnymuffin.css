@@ -1,0 +1,292 @@
+/* #415468 color pallette */
+
+.bg1{
+	background-color: #9fadbd;
+	margin:0px;
+	overflow: fit-content;
+}
+
+h1{
+	color: #009afa;
+	text-shadow: 2px 2px #674a55;
+	background-color: #415468;
+	margin: 0px;
+	line-height: 100px;
+}
+
+h2{
+	color: #009afa;
+	text-shadow: 2px 2px #674a55;
+}
+
+.selectSong{
+	cursor: pointer;
+}
+
+.about{
+	max-width: 97.5%;
+	background-color: #9a7b87;
+	border: 3px groove #674a55;
+	border-radius: 10px;
+	box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	width: 100%;
+	max-height: 98%;
+	padding: 5px;
+	overflow: auto;
+	
+}
+
+.box{
+	background-color: #9a7b87;
+	border: 3px groove #674a55;
+	border-radius: 10px;
+	box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	width: 100%;
+	max-height: 98%;
+	padding: 5px;
+	overflow: auto;
+	
+}
+
+
+
+.newsFeed{
+	max-height: 97%;
+	padding: 5px;
+}
+
+.aboutBand{
+	max-height: 97%;
+}
+
+.newsFeed p{
+	border-bottom: 1px solid black;
+}
+
+.tipAmount{
+	height: 20px;
+	width: 50px;
+	background-color: #f1f1e6;
+}
+
+.audio{
+	width:95%;
+	margin-top: 15%;
+	
+}
+
+.bandLink{
+	text-decoration: none;
+	color: black;
+}
+
+.stageLax{
+	z-index: -50;
+	position: sticky;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	height: 200px;
+	background-color:black;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.stageLax img{
+	width: 100%;
+	height:200px;
+	margin: auto;
+}
+
+.bandPic{
+	width: 75%;
+	height: 100%;
+}
+
+.flex-container{
+	display: flex;
+	justify-content: flex-start;
+	margin-right: 5px;
+}
+.commercial{
+	width: 565px;
+	height: 320px;
+	padding: 5px;
+	margin: auto;
+}
+
+.container1{
+	
+	width: 30%;
+	margin: 10px;
+	margin-left: 0px;
+}
+
+.container2{
+	
+	width: 45%;
+	margin: 10px;
+	
+}
+
+.container3{
+	
+	width: 25%;
+	margin: 10px;
+}
+
+/* menu style */
+
+.menu{
+	position: sticky;
+	top: 0px;
+	z-index:5100;
+}
+
+.menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #415468;
+	border-radius: 7px;
+	box-shadow:0 4px 8px 0 rgba(255,255,255,0.2),0 6px 20px 0 rgba(255,255,255,0.19);
+	
+	
+}
+
+.menu li{
+	float: left;
+	margin-right: 2px;
+}
+
+.menu li a{
+	display: inline-block;
+	color: #f1f1e6;
+	text-align: center;
+	padding: 10px 10px;
+	text-decoration: none;
+	border: 5px outset #555;
+	border-radius: 7px;
+}
+
+.current{
+	display: inline-block;
+	color: #f1f1e6;
+	text-align: center;
+	padding: 10px 10px;
+	/* text-decoration: none; */
+	border: 5px inset #555;
+	border-radius: 7px;
+	
+}
+
+
+.menu li a:hover{
+	background-color: #bca5ae;
+	border: 5px inset #555;
+}
+
+.menu li:last-child{
+	float: right;
+	margin-right: 0px;
+}
+
+/* end menu */
+
+/* for custom scrollbar */
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+	
+}
+/* track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 10px #415468;
+	border-radius: 10px;
+}
+
+/* handle */
+::-webkit-scrollbar-thumb {
+	background: #3989a1;
+	border-radius: 10px;
+}
+
+/* handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #30c2c2;
+}
+/* end custom scrollbar */
+
+/* scale down for smaller screenwidth */
+@media screen and (max-width: 600px){
+
+.flex-container{
+	
+	flex-direction: column;
+	margin-bottom: 15px;
+}
+
+.container1{
+	
+	width: 90%;
+	margin: auto;
+	margin-left:0px;
+}
+
+.container2{
+	
+	width: 90%;
+	margin:auto;
+	margin-left:0px;
+}
+
+.container3{
+	
+	width: 90%;
+	margin: auto;
+	margin-left:0px;
+}
+
+.about{
+	width: 80%;
+	margin-left: 50%;
+	margin-right: 50%;
+	transform: translate(-50%,0px);
+	margin-bottom: 15px;
+}
+
+.box{
+	margin-left: 50%;
+	margin-right: 50%;
+	transform: translate(-45%,0);
+	
+}
+	
+}
+
+
+/* fixing some div elements for larger screen width so it doesn't look stretched out. */
+@media screen and (min-width: 700px){
+	.about{
+		max-width: 700px;
+		margin: auto;
+	}
+	
+	.stagelax{
+		max-width: 700px;
+		margin: auto;
+		background-color: #415468;
+	}
+	
+	.stageLax img{
+	max-width: 700px;
+	margin-left: 50%;
+	margin-right: 50%;
+	transform: translate(-50%,0);
+	
+}
+
+}

@@ -1,0 +1,88 @@
+.bg1{
+	background-color: #ddd7c6;
+}
+
+.outer{
+	position: fixed;
+	top: 10%;
+	left: 10%;
+	right: 10%;
+	bottom: 10%;
+	border: 5px solid black;
+	transition: background-color 2s;
+}
+
+.inner{
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	height: 100px;
+	width: 100px;
+	background-color:#ffd0a6;
+	transition:all 5s;
+}
+
+.outer:hover{
+	background-color: #f5d6b1;
+}
+
+.outer:hover .inner{
+	background-color: #ffc4aa;
+	top: 50%;
+	left: 50%;
+}
+
+.menu{
+	position: absolute;
+	top: 0px;
+	left: 20px;
+	width: 475px;
+	height: 0px;
+	display: block;
+	transition: height .5s;
+	background-color: #b6ab87;
+	overflow: hidden;
+}
+
+.outer:hover .menu{
+	display: block;
+	height: 350px;
+}
+
+.menuitem{
+	display: block;
+	background-color: white;
+	color: black;
+	border: 5px solid gray;
+	width: 65px;
+	height: 20px;
+	transition: color 1s, background-color 1s;
+}
+
+.menuitem:hover{
+	background-color: black;
+	color: white;
+}
+.menu2{
+	position: relative;
+}
+.submenu{
+	display: none;
+	position: absolute;
+	top:-5px;
+	left: 65px;
+	width: 375px;
+}
+
+.menu2 .menuitem{
+	display: inline-block;
+	float: left;
+	
+}
+.menu2:hover .menuitem{
+	display: inline-block;
+	
+}
+.menu2:hover .submenu{
+	display: block;
+}

@@ -1,0 +1,155 @@
+body{
+	background-color: #bba79c;
+
+}
+h1{
+	color: #54433a;
+}
+h2{
+	color: #9f2191;
+	text-shadow: 2px 2px #54433a;
+}
+a:link{
+	background-color: #964300;
+	border: 2px groove #54433a;
+	padding: 5px;
+	border-radius: 10px;
+	box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	color: #9f2191;
+}
+a:visited{
+	color: #614270;
+}
+a:hover{
+	color:white;
+}
+a:active{
+	color:black;
+}
+.a2:link{
+	color: #964300;
+	background-color: #ffc380;
+}
+.a2:visited{
+	color: ffa160;
+}
+.a2:hover{
+	color:#eo8141;
+}
+.a2:active{
+	color: #00c9ab;
+	background-color: black;
+}
+.box{
+	color: #bba79c;
+	width: 100px;
+	height: 100px;
+	border: 2px groove #54433a;
+	border-radius: 10px;
+	box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	margin: 5px;
+	background-color: #964300;
+	
+}
+
+.div1{
+	position: static; /*default position*/
+}
+.div11{
+	background-color: #ff8d3f;
+	margin: auto;
+	color: #964300;
+}
+
+.div2{
+	position: relative;
+	left: 100px;
+	top: -10px;
+}
+.div12{
+	position: relative;
+	right: 100px;
+	bottom: -10px;
+	background-color: #ff8d3f;
+	color: #964300;
+}
+.div12:hover{
+	right: -100px;
+}
+
+.div3{
+	position: fixed;
+	top: 50px;
+	right: 50px;
+	z-index:42;
+}
+.div13{
+	position: fixed;
+	bottom: 50px;
+	left: 50px;
+	z-index:42;
+	background-color: #ff8d3f;
+	color: #964300;
+}
+.container{
+	position: relative; /*container must have some position*/
+	height: 400px;
+	width: 100px;
+	max-width: 700px;
+	min-width: 500px;
+	border: 2px groove #54433a;
+	border-radius: 10px;
+	box-shadow:0 4px 8px 0 #9f2191,0 6px 20px 0 rgba(5,0,0,0.19);
+	background-color: #54433a;
+	z-index: -1;
+}
+.container2{
+	box-shadow:0 4px 8px 0 #00c9ab,0 6px 20px 0 rgba(5,0,0,0.19);
+	background-color: #ffc380;
+	opacity: 0.5;
+}
+.container2:hover{
+	background-image: url("childDog.JPG")
+}
+.div4{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.div14{
+	background-color: #ff8d3f;
+	color: #964300;
+}
+.div14:hover{
+	transform:translate (30%, 30%);
+	
+}
+.div5{
+	position: sticky;
+	top: 50px;
+	right:50px;
+	z-index: 41;
+}
+.div15{
+	bottom: 50px;
+	background-color: #ff8d3f;
+	color: #964300;
+}
+.div5:hover{
+	background-color: blue;
+	z-index:43;
+}
+
+.body2{
+	background-color: #e08141;
+}
+.h12{
+	background-color: #ffc380;
+	color: #ffc380;
+	text-shadow: 2px 2px #964300;
+	text-align: center;
+	border: 2px groove #964300;
+	border-radius: 10px;
+	box-shadow:0 4px 8px 0 #00c9ab,0 6px 20px 0 rgba(0,0,0,0.19);
+}
